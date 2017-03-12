@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--Allow to specify Georgia font to display text on the web page from
+		Georgia.ttf file-->
+		<style type="text/css">
+		@font-face {
+	    font-family: Georgia;
+	    src: url(fonts/Georgia.ttf); 
+	    }
+		</style>
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" 
+		rel="stylesheet">
+		<!--Normalize.css is a small CSS file that provides better cross-browser
+		consistency in the default styling of HTML elements..-->
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+		<link href="styles/styles.css" rel="stylesheet">
+		<!--script to start using jQuery on web site-->
+		<script
+			src="https://code.jquery.com/jquery-3.1.1.js"
+			integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+			crossorigin="anonymous">
+		</script>
+		<script type="text/javascript" src="scripts/jquery.js"></script>
+		<script type="text/javascript" src="scripts/js.js"></script>
+		<title>BUSINESS SECRETS</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="first-header">
+					<img src="images/logo.png" alt="Logo" width="19.5%">
+					<h3 class="header-slogan">we know <span>the secrets of 
+					success</span></h3>
+				</div>
+				<nav>
+					<ul class="page-navigation">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">About</a>
+							<ul>
+								<li><a href="#">Mission</a></li>
+								<li><a href="#">Team</a></li>
+								<li><a href="#">History</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Solutions</a></li>
+						<li><a href="#">Contacts</a></li>
+					</ul>
+				</nav>
+				<div class="second-header">
+					<img class="leftpic" src="images/header-text.png" 
+					alt="header-text">
+					<img class="rightpic" src="images/header.png" alt="header">
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container">
+				<div class="collections">
+					<div class="collection-item-outer">
+						<div class="collection-item">
+							<h2 class="collection-title">Customer says<br/>
+							<small>success stories</small></h2>
+							<div class="collection-text">
+								<p>Lorem ipsum dolor sit amet, consectetur 
+								adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna 
+								aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi 
+								ut aliquip ex ea commodo consequat.</p>
+							</div>
+							<div class="collection-link">
+								<div class="collection-link-inner">
+									<img src="images/sample.png" width="77" 
+									height="77" alt="image">
+								</div>
+								<div class="collection-link-inner">
+									<p>Ostap Iavorskyi<br/>
+									<a href="mailto:ost.yavir@gmail.com">
+									ost.yavir@gmail.com</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="collection-item-outer">
+						<div class="collection-item">
+							<h2 class="collection-title">Why choose us?<br/>
+							<small>our benefits</small></h2>
+							<div class="collection-text">
+								<p><b>Lorem ipsum dolor sit amet, consec tetuer 
+								adipiscing elit. Praesent ves tibulum mo lestie 
+								lacus.</b></p>
+								<p class="collection-text-inner">Aenean nonummy 
+								hendrerit mauris. Pha sellus porta. 
+								Fusce suscipit varius mi. Cum sociis natoque 
+								penatibus et magnis dis parturient montes, 
+								nascetur ridiculus mus. 
+								Nulla duiuis ultricies pharetra magna. Donec 
+								accumsan malesuada orci. Donec sit amet eros. 
+								Lorem ipsum dolor. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi 
+								ut aliquip ex ea commodo consequat. Duis aute 
+								irure dolor in reprehenderit in voluptate velit
+								esse cillum dolore eu fugiat nulla pariatur. 
+								Excepteur sint occaecat cupidatat non	
+								proident, sunt in culpa qui officia deserunt 
+								mollit anim id est laborum.</p>
+							<!--onclick="showText(this)" - execute a JavaScript
+							from "scripts/js.js" when a button is clicked.-->
+							<button onclick="showText(this)">Read More...
+							</button>
+							</div>
+						</div>
+					</div>
+					<div class="collection-item-outer">
+						<div class="collection-item">
+							<h2 class="collection-title">News headlines<br/>
+							<small>what’s new</small></h2>
+							<div class="collection-list">
+							<ul>
+								<li><a href="#">Lorem ipsum dolor sit 
+								amet</a></li>
+								<li><a href="#">Praesent vestibulum mo lestie 
+								lacus</a></li>
+								<li><a href="#">Aenean nonummy
+								hendrerit</a></li>
+								<li><a href="#">Phasellus porta</a></li>
+							</ul>
+							</div>
+							<div class="collection-newsletter">
+								<p>Newsletter</p>
+								<form class="news" method="post" 
+								action="news.js">
+									<input type="text" name="newsletter" 
+									placeholder="E-mail" required>
+									<input type="submit" 
+									name="submit-newsletter" value="OK">
+								</form>
+								<a href="#">unsubscribe</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="second-collections">
+					<div class="second-collection-item-outer">
+						<h2 class="second-collection-title">New solutions</h2>
+						<div class="collection-list">
+							<ul>
+								<li><a href="#">Consumer Product 
+								Strategy</a></li>
+								<li><a href="#">Customer Experience</a></li>
+								<li><a href="#">Direct Marketing</a></li>
+								<li><a href="#">eBusiness & Channel 
+								Strategy</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="second-collection-item-outer">
+						<h2 class="second-collection-title">
+						Popular services</h2>
+						<div class="collection-list">
+							<ul>
+								<li><a href="#">Analyst Relations</a></li>
+								<li><a href="#">B2B Market Research</a></li>
+								<li><a href="#">Vendor Strategy</a></li>
+								<li><a href="#">Technology Product 
+								Management</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="second-collection-item-outer">
+						<h2 class="second-collection-title">Press releases</h2>
+						<div class="collection-list">
+							<ul>
+								<li><a href="#">US IT Market Outlook: 
+								Q3 2009</a></li>
+								<li><a href="#">What Does IT Do For 
+								The Business?</a></li>
+								<li><a href="#">Essential Metrics For 
+								Managing IT</a></li>
+								<li><a href="#">The Customer Experience 
+								Journey</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<p>Ostap Iavorskyi © 2017 | Privacy Policy</p>
+				<p><a href="mailto:ost.yavir@gmail.com">
+				<b>ost.yavir@gmail.com</b></a></p>
+			</div>
+		</footer>
+	</body>
+</html>

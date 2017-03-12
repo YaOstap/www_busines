@@ -1,0 +1,350 @@
+/*! GENERAL STYLES FOR WEB PAGE */
+body {
+	background-color: #f8f8f3;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 100%;
+}
+/**
+ * Remove default values for elements.
+ */
+.container ul {
+	margin: 0;
+	padding: 0;
+}
+.container ul, .container li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+p {
+	font-size: 15px;
+	line-height: 1.3em;
+}
+/**
+ * Applied margin to, the object will sit centrally within its parent container 
+ * and specify default wight to the general div elements.
+ */
+.container {
+	margin: 0 auto;
+	width: 960px;
+}
+
+/* FIRST HEADER WITH SLOGAN */
+.header {
+	margin-top: 30px;
+}
+.header-slogan {
+	font-style: italic;
+	display: inline;
+	margin: 20px, auto;
+	float: right;
+}
+.header-slogan span {
+	color: #792913;
+}
+
+/* NAVIGATION STYLES */
+
+/**
+ * Specifies the navigation menu elements to be always in front of a 
+ * second-header elements.
+ */	
+nav {
+	position: relative;
+	z-index: 1;
+}
+.page-navigation {
+	display: block;
+	margin: 0 auto;
+	padding: 0 15px;
+	width: 100%;
+	height: 40px;
+	background-color: #f8f8f3;
+	cursor: pointer;
+}
+.page-navigation li {
+	display: block;
+	position: relative;
+	float: left;
+	width: 19.5%;
+}
+/**
+ * Transition Vendor prefixes for transition of color styles after mouse over on 
+ * menu button.
+ */
+.page-navigation li a {
+	display: block;
+	float: left;
+	width: 100%;
+	line-height: 2em;
+	font-weight: bold;
+	text-align: center;
+	color: black;
+	background-color: #ebe9d8;
+	border-top: 5px solid #e8e5d1;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+/* 
+ * Used to select styles for navigation links when mouse over them.
+ */
+.page-navigation li:hover > a {
+	color: white;
+	background-color: #d4c69c;
+	border-top-color: #cdbc8b;
+}
+
+/*
+ * Add horizontal margin for buttons.
+ */
+.page-navigation > li + li {
+	margin-left: 0.6%;
+}
+
+/* STYLES ON SECONDARY MENU */
+/**
+ * 'display: none' - used with jQuery to hide and show secondary navigation 
+ * elements.
+ */
+.page-navigation ul {
+	position: absolute;
+	top: 41px;
+	width: 100%;
+	display: none;
+	list-style: none;
+}
+.page-navigation ul li {
+	display: block;
+	width: 100%;
+}
+
+/* 
+ * Add vertical margin for secondary navigation buttons.
+ */
+.page-navigation ul li + li {
+	margin-top: 2%;
+}
+/**
+ * Transition vendor prefixes for transition of color styles after mouse over on 
+ * menu button.
+ */
+.page-navigation ul li a {
+	display: block;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+/*
+ * Used to select styles for links when mouse over them.
+ */
+.page-navigation ul li a:hover {
+  	color: white;
+	background-color: #d4c69c;
+	border-top-color: #cdbc8b;
+}
+
+/* LOGOS LINE STYLES */
+
+/*
+ *Adding styles for images after navigation menu.
+ */
+.second-header {
+	padding-top: 20px;
+	height: 308px;
+	vertical-align: middle;
+}
+.leftpic {
+	margin: 50px;
+}
+.rightpic {
+	float: right;
+}
+
+/* MAIN PART - first horizontal collection.*/
+
+/*
+ * Default styles for all collections of the page.
+ */
+.collections {
+	overflow: auto;
+	background-color: #ebe9d8;
+	border-top: 5px #e2e0cf solid;
+}
+.collection-item-outer {
+	display: inline-block;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 33.33%;
+	box-sizing: border-box;
+}
+/*Adding default right padding only for the first block of the collection of
+ *the horizontal line.
+ */
+.collections > div:first-child {
+	padding-left: 10px;
+	padding-right: 0;
+}
+/*Adding default left padding only for the last block of the collection of
+ *the horizontal line.
+ */
+.collections > div:last-child {
+	padding-right: 10px;
+	padding-left: 0;
+}
+.collection-title {
+	margin: 0;
+	padding-bottom: 5px;
+	font-size: 24px;
+	line-height: 1.2em;
+}
+.collection-title small {
+	color: #792913;
+	font-size: 70%;
+}
+.collection-text {
+	padding: 0;
+}
+.collection-item h2 {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin: 5px 0;
+}
+.collection-text p {
+	overflow: hidden;
+	margin: 0;
+	text-align: justify;
+}
+.collection-text p+p{
+	margin-top: 20px;
+}
+.collection-text-inner {
+	height: 98px;
+}
+.collection-link {
+	height: 100px;
+}
+.collection-link-inner{
+	display: inline-block;
+	vertical-align: top;
+}
+.collection-link-inner img {
+	border: 1px #792913 solid;
+	padding: 5px;
+	margin: 5px 5px 5px 0;
+}
+.collection-link-inner p {
+	font-weight: bold;
+	margin-top: 25px;
+}
+.collection-text button {
+	margin: 10px auto;
+	padding: 5px;
+	background: #bf3a16;
+	color: white;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	outline: none;
+}
+
+/* MAIN PART - styles for links in first horizontal collection. */
+
+.collection-list ul {
+	margin-left: 25px;
+	margin-bottom: 10px;
+	padding-left: 0px;
+}
+.collection-list ul, .collection-list li {
+	list-style-type: square;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	line-height: 1.7em;
+}
+.collection-list a {
+	color: #792913;
+	text-decoration: underline;
+}
+.collection-list a:hover {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* MAIN PART - newsletter collection styles. */
+
+.collection-newsletter{
+	overflow: hidden;
+	border-radius: 10px;
+	background-color: #bf3a16;
+}
+.collection-newsletter p {
+	color: white;
+	font-size: 1.5em;
+	margin: 10px;
+}
+.collection-newsletter a {
+	display: block;
+	color: white;
+	font-size: 0.8em;
+	margin: 10px;
+	text-decoration: underline;
+}
+.news {
+	margin-left: 10px;
+}
+.news input[type="text"] {
+	padding: 5px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	outline: none;
+}
+.news input[type="submit"] {
+	padding: 5px 20px;
+	border: 1px solid white;
+	border-radius: 5px;
+	background-color: #792913;
+	color: white;
+}
+
+/* MAIN PART - styles for second horizontal collection with links. */
+
+.second-collections {
+	overflow: auto;
+	background-color: #dad5bb;
+	border-top: 5px solid #bf3a16;
+}
+.second-collection-item-outer {
+	display: inline-block;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 33.33%;
+	box-sizing: border-box;
+}
+.second-collection-title {
+	margin: 10px 0 5px 25px;
+	font-size: 18px;
+}
+
+/* FOOTER PART */
+
+.footer {
+	background-color: #bf3a16;
+	color: white;
+	padding: 5px 0;
+	margin: 0 auto;
+	width: 960px;
+	text-align: center;
+}
+.footer a{
+	text-decoration: none;
+	color: white;
+	font-size: 1.2em;
+}
